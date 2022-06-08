@@ -9,15 +9,15 @@ pinNameBySize = {
 }
 pinAddresBySizeMap = {
     SIZE_93C86_CEM: [
-        [1251,1249,1253,1248,1250,1252],
+        [0x4E3,0x4E1,0x4E5,0x4E0,0x4E2,0x4E4],
     ],
     SIZE_28F400_CEM: [
-        [16384,16385,16386,16387,16388,16389],
-        [24576,24577,24578,24579,24580,24581],
+        [0x4000,0x4001,0x4002,0x4003,0x4004,0x4005],
+        [0x6000,0x6001,0x6002,0x6003,0x6004,0x6005],
     ],
 }
 
-uploaded_file = st.file_uploader("Choose a firmware file")
+uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
 
